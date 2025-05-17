@@ -46,7 +46,7 @@ export default function Signup() {
     backgroundBlendMode: "overlay",
   }}
 >
-      <h1 className="text-center text-3xl sm:text-4xl md:text-5xl font-semibold mb-10 leading-snug">
+      <h1 className="text-center text-3xl sm:text-4xl md:text-5xl font-semibold mb-10 leading-snug ">
         Create your <span className="text-blue-400">TaskMaster</span> account
         <br />
         <span className="text-sm md:text-base font-normal text-gray-500">
@@ -54,7 +54,7 @@ export default function Signup() {
         </span>
       </h1>
 
-      <div className="bg-black backdrop-blur-lg p-8 rounded-2xl w-full max-w-md text-white">
+      <div className="bg-black backdrop-blur-lg p-8 rounded-2xl w-full max-w-md text-white hover:shadow-xl shadow-blue-500 shadow-xl/50">
         <h2 className="text-2xl font-semibold text-center mb-6 text-gray-100">
           Sign Up to TaskMaster
         </h2>

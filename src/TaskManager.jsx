@@ -92,7 +92,7 @@ const handleLogout = async () => {
       onClick={() => {
         signOut(auth);
       }}
-      className="bg-red-500 hover:bg-red-600 text-white px-4 py-2 rounded-md"
+      className="bg-red-500 hover:bg-red-600 text-white font-medium px-4 pt-2 pb-2 rounded-md"
     >
       Logout
     </button>
@@ -107,7 +107,7 @@ const handleLogout = async () => {
         </span>
       </h1>
 
-      <div className="bg-gray-950 p-6 rounded-xl w-full max-w-xl hover:shadow-lg shadow-blue-500 shadow-xl/10">
+      <div className="bg-gray-950 p-6 rounded-xl w-full max-w-xl hover:shadow-xl shadow-blue-500 shadow-xl/20">
         <h2 className="text-3xl font-semibold mb-6 text-center">Your Tasks</h2>
 
         <div className="flex mb-4">

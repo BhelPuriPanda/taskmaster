@@ -54,7 +54,7 @@ export default function Login() {
         </span>
       </h1>
 
-      <div className="bg-white p-8 rounded-2xl shadow-xl w-full max-w-md text-black">
+      <div className="bg-white p-8 rounded-2xl shadow-xl w-full max-w-md text-black hover:shadow-xl shadow-blue-500 shadow-xl/50">
         <h2 className="text-2xl font-semibold text-center mb-6 text-gray-800">
           Login to TaskMaster
         </h2>
@@ -78,7 +78,7 @@ export default function Login() {
           />
           <button
             type="submit"
-            className="w-full bg-gray-900 text-white py-2 rounded-lg hover:bg-gray-950 transition"
+            className="w-full bg-gray-900 font-medium text-white py-2 rounded-lg hover:bg-gray-950 transition"
           >
             Login
           </button>
