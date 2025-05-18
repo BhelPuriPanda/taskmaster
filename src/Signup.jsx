@@ -39,9 +39,9 @@ export default function Signup() {
 
   return (
     <div
-  className="min-h-screen w-screen text-white flex flex-col items-center justify-center px-4 py-10 overflow-x-hidden bg-cover bg-center bg-no-repeat"
+  className="bg-[url('/image1.png')] min-h-screen w-screen text-white flex flex-col items-center justify-center px-4 py-10 overflow-x-hidden bg-cover bg-center bg-no-repeat"
   style={{
-    backgroundImage: "url('/image1.png')",
+  
     backgroundColor: "rgba(0, 0, 0, 0.2)",
     backgroundBlendMode: "overlay",
   }}

@@ -39,9 +39,9 @@ export default function Login() {
 
   return (
     <div
-  className="min-h-screen w-screen text-white flex flex-col items-center justify-center px-4 py-10 overflow-x-hidden bg-cover bg-center bg-no-repeat"
+  className=" bg-[url('/image1.png')] min-h-screen w-screen text-white flex flex-col items-center justify-center px-4 py-10 overflow-x-hidden bg-cover bg-center bg-no-repeat"
   style={{
-    backgroundImage: "url('/image1.png')",
+    
     backgroundColor: "rgba(0, 0, 0, 0.7)",
     backgroundBlendMode: "overlay",
   }}
@@ -91,7 +91,7 @@ export default function Login() {
   className="w-full flex items-center justify-center gap-2 bg-gray-900 text-white font-medium py-2 rounded-lg border border-gray-300 hover:bg-gray-950 transition"
 >
   <FcGoogle size={20} />
-  Sign up with Google
+  Sign in with Google
 </button>
 
         <p className="mt-4 text-sm text-center text-gray-600">

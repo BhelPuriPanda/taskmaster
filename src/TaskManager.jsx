@@ -13,6 +13,10 @@ import {
 import { onAuthStateChanged } from "firebase/auth";
 import { signOut } from "firebase/auth";
 import { useNavigate } from "react-router-dom";
+import { AiOutlineClose } from "react-icons/ai";  // Ant Design close icon
+import { MdClose } from "react-icons/md";          // Material Design close icon
+import { FiX } from "react-icons/fi";               // Feather X icon
+
 
 export default function TaskManager() {
   const [user, setUser] = useState(null);
@@ -77,10 +81,9 @@ const handleLogout = async () => {
 
   return (
     
-    <div className="min-h-screen bg-black text-white flex flex-col items-center p-6 bg-cover bg-center bg-no-repeat"
+    <div className="bg-[url('/image2.png')] min-h-screen bg-black text-white flex flex-col items-center p-6 bg-cover bg-center bg-no-repeat"
     style={{
-      backgroundImage : "url('./image2.png')",
-      backgroundColor: "rgba(0, 0, 0, 0.65)",
+      backgroundColor: "rgba(0, 0, 0, 0.92)",
       backgroundBlendMode: "overlay",
     }}>
       {user && (
@@ -98,29 +101,37 @@ const handleLogout = async () => {
     </button>
   </nav>
 )}
+      {/* <header className="text-center my-8 max-w-xl">
+        <h1 className="text-6xl font-bold text-gray-50 mb-2">
+          <span className="text-blue-400">Welcome to</span> TaskMaster
+        </h1>
+        <p className="text-gray-300 text-sm md:text-base font-light">
+          "TaskMaster would hunt you down if you don't finish all your TASKS!!"
+        </p>
+      </header> */}
 
-      <h1 className="text-6xl font-semibold mt-5 mb-4 text-gray-50  text-center">
+        <h1 className="text-6xl font-semibold mt-8 mb-4 text-gray-50  text-center">
         <span className="text-blue-400">Welcome to</span> TaskMaster
         <br />
-        <span className="text-sm md:text-base font-normal mt-2 text-gray-300">
+        <span className="text-sm md:text-base font-extralight mt-2 mb-3 text-gray-300">
           "TaskMaster would hunt you down if you don't finish all your TASKS!!"
         </span>
       </h1>
 
-      <div className="bg-gray-950 p-6 rounded-xl w-full max-w-xl hover:shadow-xl shadow-blue-500 shadow-xl/20">
+      <div className="bg-gray-950 p-6 rounded-xl w-full max-w-xl shadow-xl ring-2 ring-blue-400/50 hover:ring-blue-400 hover:shadow-blue-500/40 transition">
         <h2 className="text-3xl font-semibold mb-6 text-center">Your Tasks</h2>
 
-        <div className="flex mb-4">
+        <div className="flex mb-4 gap-2">
           <input
             type="text"
             value={task}
             onChange={(e) => setTask(e.target.value)}
             placeholder="Enter a task"
-            className="flex-grow px-4 py-2 rounded-l-lg bg-gray-700 text-white focus:outline-none focus:ring-1 focus:ring-white"
+            className="flex-grow px-4 py-2 rounded-lg bg-gray-700 text-white focus:outline-none focus:ring-1 focus:ring-white"
           />
           <button
             onClick={handleAddTask}
-            className="bg-white text-black px-4 py-2 rounded-r-lg hover:bg-black  hover:text-white transition hover:cursor-pointer ring"
+            className="bg-white text-black font-medium px-4 py-2 rounded-xl hover:bg-black  hover:text-white transition hover:cursor-pointer ring"
           >
             Add Task
           </button>
@@ -170,7 +181,7 @@ const handleLogout = async () => {
                 onClick={() => handleDeleteTask(t.id)}
                 className="text-red-400 hover:text-red-600 text-lg"
               >
-                ❌
+                <FiX/>
               </button>
             </li>
           ))}
